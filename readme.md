@@ -30,8 +30,9 @@ Ikuti langkah-langkah berikut untuk menginstal modul ini pada Odoo 16:
 
 Salin seluruh folder `pos_pertamina` ke direktori addons Odoo. Contoh lokasi default untuk Odoo Windows:
 
+```bash
 C:\Program Files\Odoo 16.0.20250210\server\odoo\addons
-
+```
 
 ### 2. **Restart Odoo Server**
 
