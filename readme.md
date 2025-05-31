@@ -40,8 +40,9 @@ Buka Command Prompt sebagai Administrator, lalu jalankan:
 ```bash
 net stop odoo-server-16.0
 net start odoo-server-16.0
+```
 
-3. Aktifkan Developer Mode
+### 3. **Aktifkan Developer Mode**
 Login ke Odoo sebagai Administrator.
 
 Aktifkan Developer Mode melalui menu:
@@ -50,7 +51,7 @@ Klik user di pojok kanan atas → "Aktifkan Mode Developer"
 
 Atau tambahkan ?debug=1 pada URL Odoo Anda
 
-4. Update Apps List
+### 4. **Update Apps List**
 Masuk ke menu Apps
 
 Klik tombol Update Apps List
