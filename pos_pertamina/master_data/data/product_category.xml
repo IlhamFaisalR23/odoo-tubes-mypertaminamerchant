@@ -1,0 +1,71 @@
+<odoo>
+    <data noupdate="1">
+
+        <!-- Parent: Saleable (default ID product_category_1) -->
+
+        <!-- Pertamina -->
+        <record id="product_category_pertamina" model="product.category">
+            <field name="name">Pertamina</field>
+            <field name="parent_id" ref="product.product_category_1"/>
+        </record>
+
+        <!-- Subkategori Pertamina -->
+        <record id="product_category_pertamina_bbm" model="product.category">
+            <field name="name">BBM</field>
+            <field name="parent_id" ref="product_category_pertamina"/>
+        </record>
+
+        <record id="product_category_pertamina_lpg" model="product.category">
+            <field name="name">LPG</field>
+            <field name="parent_id" ref="product_category_pertamina"/>
+        </record>
+
+        <record id="product_category_pertamina_pelumas" model="product.category">
+            <field name="name">Pelumas</field>
+            <field name="parent_id" ref="product_category_pertamina"/>
+        </record>
+
+        <record id="product_category_pertamina_refrigeran" model="product.category">
+            <field name="name">Refrigeran</field>
+            <field name="parent_id" ref="product_category_pertamina"/>
+        </record>
+
+        <!-- Non-Pertamina -->
+        <record id="product_category_non_pertamina" model="product.category">
+            <field name="name">Non-Pertamina</field>
+            <field name="parent_id" ref="product.product_category_1"/>
+        </record>
+
+        <!-- Subkategori Non-Pertamina -->
+        <record id="product_category_makanan" model="product.category">
+            <field name="name">Makanan</field>
+            <field name="parent_id" ref="product_category_non_pertamina"/>
+        </record>
+
+        <record id="product_category_minuman" model="product.category">
+            <field name="name">Minuman</field>
+            <field name="parent_id" ref="product_category_non_pertamina"/>
+        </record>
+
+        <record id="product_category_rumah_tangga" model="product.category">
+            <field name="name">Alat Rumah Tangga</field>
+            <field name="parent_id" ref="product_category_non_pertamina"/>
+        </record>
+
+        <record id="product_category_kendaraan" model="product.category">
+            <field name="name">Perlengkapan Kendaraan</field>
+            <field name="parent_id" ref="product_category_non_pertamina"/>
+        </record>
+
+        <record id="product_category_pulsa" model="product.category">
+            <field name="name">Pulsa</field>
+            <field name="parent_id" ref="product_category_non_pertamina"/>
+        </record>
+
+        <record id="product_category_token" model="product.category">
+            <field name="name">Token Listrik</field>
+            <field name="parent_id" ref="product_category_non_pertamina"/>
+        </record>
+
+    </data>
+</odoo>

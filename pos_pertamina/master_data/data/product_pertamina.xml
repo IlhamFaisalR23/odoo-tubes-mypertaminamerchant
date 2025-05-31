@@ -1,0 +1,307 @@
+<odoo>
+    <!-- Kategori Pertamina harus sudah ada, contoh ID category_pertamina -->
+
+    <record id="product_oli_fastron_gold" model="product.template">
+        <field name="name">Oli Fastron Gold</field>
+        <field name="type">product</field>
+        <field name="list_price">95000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">90000</field>
+        <field name="max_allowed_price">100000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli sintetis untuk mesin mobil dengan performa tinggi, varian Fastron Gold.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_fastron_platinum" model="product.template">
+        <field name="name">Oli Fastron Platinum</field>
+        <field name="type">product</field>
+        <field name="list_price">105000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">100000</field>
+        <field name="max_allowed_price">110000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli sintetis untuk mesin mobil dengan performa tinggi, varian Fastron Platinum.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_fastron_racing" model="product.template">
+        <field name="name">Oli Fastron Racing</field>
+        <field name="type">product</field>
+        <field name="list_price">115000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">110000</field>
+        <field name="max_allowed_price">120000</field>
+        <field name="sale_ok">True</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli sintetis untuk mesin mobil dengan performa tinggi, varian Fastron Racing.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_prima_xp_10w40" model="product.template">
+        <field name="name">Oli Prima XP 10W40</field>
+        <field name="type">product</field>
+        <field name="list_price">70000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">65000</field>
+        <field name="max_allowed_price">75000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli mineral untuk mesin mobil, varian Prima XP 10W40.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_prima_xp_20w50" model="product.template">
+        <field name="name">Oli Prima XP 20W50</field>
+        <field name="type">product</field>
+        <field name="list_price">70000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">65000</field>
+        <field name="max_allowed_price">75000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli mineral untuk mesin mobil, varian Prima XP 20W50.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_mesran_super" model="product.template">
+        <field name="name">Oli Mesran Super</field>
+        <field name="type">product</field>
+        <field name="list_price">60000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">55000</field>
+        <field name="max_allowed_price">65000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli mineral untuk mesin mobil dan sepeda motor, cocok untuk kendaraan yang lebih tua.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_enduro_4t_sport" model="product.template">
+        <field name="name">Oli Enduro 4T Sport</field>
+        <field name="type">product</field>
+        <field name="list_price">55000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">50000</field>
+        <field name="max_allowed_price">60000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli untuk sepeda motor, varian Enduro 4T Sport.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_enduro_4t_racing" model="product.template">
+        <field name="name">Oli Enduro 4T Racing</field>
+        <field name="type">product</field>
+        <field name="list_price">60000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">55000</field>
+        <field name="max_allowed_price">65000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli untuk sepeda motor, varian Enduro 4T Racing.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_enduro_matic" model="product.template">
+        <field name="name">Oli Enduro Matic</field>
+        <field name="type">product</field>
+        <field name="list_price">55000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">50000</field>
+        <field name="max_allowed_price">60000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli untuk sepeda motor, varian Enduro Matic.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_meditran_sx" model="product.template">
+        <field name="name">Oli Meditran SX</field>
+        <field name="type">product</field>
+        <field name="list_price">130000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">125000</field>
+        <field name="max_allowed_price">135000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli untuk mesin diesel, varian Meditran SX.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_meditran_s" model="product.template">
+        <field name="name">Oli Meditran S</field>
+        <field name="type">product</field>
+        <field name="list_price">125000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">120000</field>
+        <field name="max_allowed_price">130000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli untuk mesin diesel, varian Meditran S.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_rored_epa" model="product.template">
+        <field name="name">Oli Rored EPA</field>
+        <field name="type">product</field>
+        <field name="list_price">140000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">135000</field>
+        <field name="max_allowed_price">145000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli khusus untuk transmisi dan roda gigi, varian Rored EPA.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_oli_rored_hda" model="product.template">
+        <field name="name">Oli Rored HDA</field>
+        <field name="type">product</field>
+        <field name="list_price">150000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_pelumas"/>
+        <field name="min_allowed_price">145000</field>
+        <field name="max_allowed_price">155000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Oli khusus untuk transmisi dan roda gigi, varian Rored HDA.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_gas_bright_gas_5_5kg" model="product.template">
+        <field name="name">Bright Gas 5.5kg</field>
+        <field name="type">product</field>
+        <field name="list_price">200000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_lpg"/>
+        <field name="min_allowed_price">190000</field>
+        <field name="max_allowed_price">210000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Bright Gas kemasan tabung 5,5 kilogram, gas isi ulang dari Pertamina.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_gas_bright_gas_12kg" model="product.template">
+        <field name="name">Bright Gas 12kg</field>
+        <field name="type">product</field>
+        <field name="list_price">400000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_lpg"/>
+        <field name="min_allowed_price">380000</field>
+        <field name="max_allowed_price">420000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Bright Gas kemasan tabung 12 kilogram, gas isi ulang dari Pertamina.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_gas_lpg_3kg" model="product.template">
+        <field name="name">LPG 3kg</field>
+        <field name="type">product</field>
+        <field name="list_price">100000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_lpg"/>
+        <field name="min_allowed_price">95000</field>
+        <field name="max_allowed_price">105000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Tabung LPG 3 kilogram, untuk kebutuhan rumah tangga kecil.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_gas_lpg_12kg" model="product.template">
+        <field name="name">LPG 12kg</field>
+        <field name="type">product</field>
+        <field name="list_price">350000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_lpg"/>
+        <field name="min_allowed_price">340000</field>
+        <field name="max_allowed_price">360000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Tabung LPG 12 kilogram, untuk penggunaan rumah tangga dan komersial kecil.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_bbm_pertalite" model="product.template">
+        <field name="name">Pertalite</field>
+        <field name="type">product</field>
+        <field name="list_price">10000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_bbm"/>
+        <field name="uom_id" ref="uom.product_uom_litre"/>
+        <field name="uom_po_id" ref="uom.product_uom_litre"/>
+        <field name="min_allowed_price">9500</field>
+        <field name="max_allowed_price">10500</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">BBM jenis Pertalite dengan RON 90.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_bbm_pertamax" model="product.template">
+        <field name="name">Pertamax</field>
+        <field name="type">product</field>
+        <field name="list_price">13000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_bbm"/>
+        <field name="uom_id" ref="uom.product_uom_litre"/>
+        <field name="uom_po_id" ref="uom.product_uom_litre"/>
+        <field name="min_allowed_price">12500</field>
+        <field name="max_allowed_price">13500</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">BBM jenis Pertamax dengan RON 92, cocok untuk kendaraan modern.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_refrigeran_musicool_22" model="product.template">
+        <field name="name">MUSICOOL-22</field>
+        <field name="type">product</field>
+        <field name="list_price">300000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_refrigeran"/>
+        <field name="min_allowed_price">290000</field>
+        <field name="max_allowed_price">310000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Pengganti R-22, digunakan untuk AC rumah atau komersial lama.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_refrigeran_musicool_134a" model="product.template">
+        <field name="name">MUSICOOL-134a</field>
+        <field name="type">product</field>
+        <field name="list_price">280000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_refrigeran"/>
+        <field name="min_allowed_price">270000</field>
+        <field name="max_allowed_price">290000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Pengganti R-134a, cocok untuk AC mobil dan kulkas.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_refrigeran_musicool_404a" model="product.template">
+        <field name="name">MUSICOOL-404A</field>
+        <field name="type">product</field>
+        <field name="list_price">320000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_refrigeran"/>
+        <field name="min_allowed_price">310000</field>
+        <field name="max_allowed_price">330000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Pengganti R-404A, digunakan pada freezer dan cold storage.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="product_refrigeran_musicool_32" model="product.template">
+        <field name="name">MUSICOOL-32</field>
+        <field name="type">product</field>
+        <field name="list_price">290000</field>
+        <field name="categ_id" ref="pos_pertamina.product_category_pertamina_refrigeran"/>
+        <field name="min_allowed_price">280000</field>
+        <field name="max_allowed_price">300000</field>
+        <field name="sale_ok">False</field>
+        <field name="purchase_ok">True</field>
+        <field name="description_sale">Alternatif R-32, cocok untuk AC modern hemat energi.</field>
+        <field name="active">True</field>
+    </record>
+
+</odoo>

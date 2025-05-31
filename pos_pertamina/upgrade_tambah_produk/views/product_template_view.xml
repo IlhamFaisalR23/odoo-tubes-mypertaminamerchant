@@ -1,0 +1,15 @@
+<odoo>
+    <record id="view_product_form_inherit_allowed_price" model="ir.ui.view">
+        <field name="name">product.template.form.allowed.price</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='list_price']" position="after">
+                <div class="o_form_label">Minimal Harga produk yang diperbolehkan</div>
+                <field name="min_allowed_price"/>
+                <div class="o_form_label">Maksimal Harga produk yang diperbolehkan</div>
+                <field name="max_allowed_price"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
