@@ -3,6 +3,7 @@ __pycache__/
 */__pycache__/
 */*/__pycache__/ 
 /__init__.py
+.history
 
 # All Odoo modules to be ignored
 account/

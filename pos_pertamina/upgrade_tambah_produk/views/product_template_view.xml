@@ -1,15 +1,62 @@
 <odoo>
+    <record id="view_product_form_restrict_fields" model="ir.ui.view">
+        <field name="name">product.template.form.restrict.fields</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="is_pertamina_category" invisible="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='name']" position="attributes">
+                <attribute name="attrs">{'invisible': [('is_pertamina_category', '=', True)]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='type']" position="attributes">
+                <attribute name="attrs">{'invisible': [('is_pertamina_category', '=', True)]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='categ_id']" position="attributes">
+                <attribute name="attrs">{'invisible': [('is_pertamina_category', '=', True)]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='description_sale']" position="attributes">
+                <attribute name="attrs">{'invisible': [('is_pertamina_category', '=', True)]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='active']" position="attributes">
+                <attribute name="attrs">{'invisible': [('is_pertamina_category', '=', True)]}</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+
     <record id="view_product_form_inherit_allowed_price" model="ir.ui.view">
         <field name="name">product.template.form.allowed.price</field>
         <field name="model">product.template</field>
         <field name="inherit_id" ref="product.product_template_only_form_view"/>
         <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='list_price']" position="before">
+                <field name="is_pertamina_category" invisible="1"/>
+            </xpath>
+
             <xpath expr="//field[@name='list_price']" position="after">
-                <div class="o_form_label">Minimal Harga produk yang diperbolehkan</div>
-                <field name="min_allowed_price"/>
-                <div class="o_form_label">Maksimal Harga produk yang diperbolehkan</div>
-                <field name="max_allowed_price"/>
+
+                <div class="o_form_label" groups="base.group_system" attrs="{'invisible': [('is_pertamina_category', '=', False)]}">
+                Minimal Harga produk yang diperbolehkan
+                </div>
+                <field name="min_allowed_price" groups="base.group_system" attrs="{'readonly': True, 'invisible': [('is_pertamina_category', '=', False)]}"/>
+
+                <div class="o_form_label" groups="base.group_system" attrs="{'invisible': [('is_pertamina_category', '=', False)]}">
+                Maksimal Harga produk yang diperbolehkan
+                </div>
+                <field name="max_allowed_price" groups="base.group_system" attrs="{'readonly': True, 'invisible': [('is_pertamina_category', '=', False)]}"/>
+
             </xpath>
         </field>
     </record>
+
 </odoo>
