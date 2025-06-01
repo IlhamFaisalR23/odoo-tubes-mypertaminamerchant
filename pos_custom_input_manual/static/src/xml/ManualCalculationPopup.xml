@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t t-name="ManualCalculationPopup" owl="1">
+        <div role="dialog" class="modal-dialog manual-calculation-popup">
+            <div class="popup popup-text">
+                <header class="title">
+                    <t t-esc="props.title" />
+                </header>
+                <main class="body">
+                    <div class="manual-calculation-form">
+                        <div class="input-group" style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <label style="width: 100px; margin-right: 20px;">Nama Produk</label>
+                            <input 
+                                type="text" 
+                                t-model="state.name" 
+                                placeholder="Masukkan nama produk"
+                                style="flex: 1;"
+                            />
+                        </div>
+                        <div class="input-group" style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <label style="width: 100px; margin-right: 20px;">Harga Satuan</label>
+                            <input 
+                                type="number" 
+                                t-model.number="state.price_unit" 
+                                placeholder="Masukkan harga"
+                                style="flex: 1;"
+                            />
+                        </div>
+                        <div class="input-group" style="display: flex; align-items: center;">
+                            <label style="width: 100px; margin-right: 20px;">Jumlah</label>
+                            <input 
+                                type="number" 
+                                t-model.number="state.quantity" 
+                                placeholder="Masukkan jumlah"
+                                style="flex: 1;"
+                            />
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                    <div class="button cancel" t-on-click="cancel">
+                        <t t-esc="props.cancelText" />  
+                    </div>
+                    <div class="button confirm" t-on-click="confirm">
+                        <t t-esc="props.confirmText" />
+                    </div>
+                    <div class="button save-to-catalog" t-on-click="saveToProductCatalog" style="min-width: 120px; white-space: nowrap;">
+                        Simpan ke Katalog
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </t>
+</templates>

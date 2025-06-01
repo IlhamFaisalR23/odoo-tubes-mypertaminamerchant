@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t t-name="ManualCalculationButton" owl="1">
+        <span class="control-button js_manual_calculation">
+            <i class="fa fa-calculator" />
+            <span> </span>
+            <span>Hitung Manual</span>
+        </span>
+    </t>
+</templates>
