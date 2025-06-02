@@ -1,0 +1,12 @@
+<odoo>
+    <record id="ir_cron_reordering_rule_auto_trigger" model="ir.cron">
+        <field name="name">Check and Create Reorder</field>
+        <field name="model_id" ref="model_stock_reorder_forecast_rule"/>
+        <field name="state">code</field>
+        <field name="code">model.check_and_create_reorder()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="numbercall">-1</field>
+        <field name="active">True</field>
+    </record>
+</odoo>

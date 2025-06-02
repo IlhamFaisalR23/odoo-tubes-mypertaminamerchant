@@ -1,0 +1,176 @@
+<odoo>
+    <!-- REORDER RULES UNTUK PRODUK PELUMAS -->
+    <record id="reorder_rule_oli_fastron_gold" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Fastron Gold</field>
+        <field name="product_id" ref="product_oli_fastron_gold"/>
+        <field name="min_qty">10</field>
+        <field name="max_qty">40</field>
+        <field name="forecast_threshold">5</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_fastron_platinum" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Fastron Platinum</field>
+        <field name="product_id" ref="product_oli_fastron_platinum"/>
+        <field name="min_qty">5</field>
+        <field name="max_qty">30</field>
+        <field name="forecast_threshold">3</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_prima_xp_10w40" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Prima XP 10W40</field>
+        <field name="product_id" ref="product_oli_prima_xp_10w40"/>
+        <field name="min_qty">15</field>
+        <field name="max_qty">60</field>
+        <field name="forecast_threshold">10</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_prima_xp_20w50" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Prima XP 20W50</field>
+        <field name="product_id" ref="product_oli_prima_xp_20w50"/>
+        <field name="min_qty">10</field>
+        <field name="max_qty">50</field>
+        <field name="forecast_threshold">8</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_mesran_super" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Mesran Super</field>
+        <field name="product_id" ref="product_oli_mesran_super"/>
+        <field name="min_qty">10</field>
+        <field name="max_qty">40</field>
+        <field name="forecast_threshold">7</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_enduro_4t_sport" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Enduro 4T Sport</field>
+        <field name="product_id" ref="product_oli_enduro_4t_sport"/>
+        <field name="min_qty">15</field>
+        <field name="max_qty">50</field>
+        <field name="forecast_threshold">10</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_enduro_4t_racing" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Enduro 4T Racing</field>
+        <field name="product_id" ref="product_oli_enduro_4t_racing"/>
+        <field name="min_qty">10</field>
+        <field name="max_qty">40</field>
+        <field name="forecast_threshold">6</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_enduro_matic" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Enduro Matic</field>
+        <field name="product_id" ref="product_oli_enduro_matic"/>
+        <field name="min_qty">10</field>
+        <field name="max_qty">40</field>
+        <field name="forecast_threshold">6</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_meditran_sx" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Meditran SX</field>
+        <field name="product_id" ref="product_oli_meditran_sx"/>
+        <field name="min_qty">15</field>
+        <field name="max_qty">60</field>
+        <field name="forecast_threshold">10</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_meditran_s" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Meditran S</field>
+        <field name="product_id" ref="product_oli_meditran_s"/>
+        <field name="min_qty">15</field>
+        <field name="max_qty">60</field>
+        <field name="forecast_threshold">10</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_rored_epa" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Rored EPA</field>
+        <field name="product_id" ref="product_oli_rored_epa"/>
+        <field name="min_qty">10</field>
+        <field name="max_qty">40</field>
+        <field name="forecast_threshold">5</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_oli_rored_hda" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Oli Rored HDA</field>
+        <field name="product_id" ref="product_oli_rored_hda"/>
+        <field name="min_qty">10</field>
+        <field name="max_qty">40</field>
+        <field name="forecast_threshold">5</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <!-- PRODUK LPG -->
+    <record id="reorder_rule_gas_bright_gas_5_5kg" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Bright Gas 5.5kg</field>
+        <field name="product_id" ref="product_gas_bright_gas_5_5kg"/>
+        <field name="min_qty">20</field>
+        <field name="max_qty">80</field>
+        <field name="forecast_threshold">10</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_gas_bright_gas_12kg" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Bright Gas 12kg</field>
+        <field name="product_id" ref="product_gas_bright_gas_12kg"/>
+        <field name="min_qty">15</field>
+        <field name="max_qty">60</field>
+        <field name="forecast_threshold">10</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_gas_lpg_3kg" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule LPG 3kg</field>
+        <field name="product_id" ref="product_gas_lpg_3kg"/>
+        <field name="min_qty">30</field>
+        <field name="max_qty">120</field>
+        <field name="forecast_threshold">15</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_gas_lpg_12kg" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule LPG 12kg</field>
+        <field name="product_id" ref="product_gas_lpg_12kg"/>
+        <field name="min_qty">20</field>
+        <field name="max_qty">80</field>
+        <field name="forecast_threshold">10</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <!-- PRODUK BBM -->
+    <record id="reorder_rule_bbm_pertalite" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule BBM Pertalite</field>
+        <field name="product_id" ref="product_bbm_pertalite"/>
+        <field name="min_qty">100</field>
+        <field name="max_qty">500</field>
+        <field name="forecast_threshold">50</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <record id="reorder_rule_bbm_pertamax" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule BBM Pertamax</field>
+        <field name="product_id" ref="product_bbm_pertamax"/>
+        <field name="min_qty">100</field>
+        <field name="max_qty">500</field>
+        <field name="forecast_threshold">50</field>
+        <field name="auto_trigger">True</field>
+    </record>
+
+    <!-- PRODUK REFRIGERAN -->
+    <record id="reorder_rule_musicool_22" model="stock.reorder.forecast.rule">
+        <field name="name">Reorder Rule Musicool 22</field>
+        <field name="product_id" ref="product_refrigeran_musicool_22"/>
+        <field name="min_qty">10</field>
+        <field name="max_qty">40</field>
+        <field name="forecast_threshold">5</field>
+        <field name="auto_trigger">True</field>
+    </record>
+</odoo>

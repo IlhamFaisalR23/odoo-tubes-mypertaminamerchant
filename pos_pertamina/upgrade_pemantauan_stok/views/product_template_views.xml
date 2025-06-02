@@ -1,14 +1,28 @@
 <odoo>
-<record id="view_product_template_form_inherit_forecast" model="ir.ui.view">
-    <field name="name">product.template.form.inherit.forecast</field>
-    <field name="model">product.template</field>
-    <field name="inherit_id" ref="product.product_template_only_form_view"/>
-    <field name="arch" type="xml">
-        <xpath expr="//field[@name='barcode']" position="after">
-            <field name="forecast_value" readonly="1"/>
-            <div class="o_form_label">Forecast ini adalah perkiraan jumlah produk yang keluar per hari, berdasarkan data 30 hari terakhir.</div>
-        </xpath>
-    </field>
-</record>
+    <record id="view_product_template_form_inherit_forecast" model="ir.ui.view">
+        <field name="name">product.template.form.inherit.forecast</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <!-- Forecast field after barcode -->
+            <xpath expr="//field[@name='barcode']" position="after">
+                <field name="forecast_value" readonly="1"/>
+                <div class="o_form_label">
+                    Forecast ini adalah perkiraan jumlah produk yang keluar per hari,
+                    berdasarkan data 30 hari terakhir.
+                </div>
+            </xpath>
 
+            <!-- Smart button inside valid structure -->
+            <xpath expr="//sheet" position="inside">
+                <div class="oe_button_box" name="button_box">
+                    <button name="%(action_reordering_rule)d"
+                            type="action"
+                            string="Reordering Rules"
+                            class="oe_stat_button"
+                            icon="fa-life-ring"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
 </odoo>

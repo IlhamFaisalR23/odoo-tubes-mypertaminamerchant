@@ -1,0 +1,28 @@
+<!-- data/reorder_action.xml -->
+<odoo>
+    <!-- Action untuk membuka list & form view orderpoints -->
+    <record id="action_pospertamina_reorder" model="ir.actions.act_window">
+        <field name="name">Reordering Rules</field>
+        <field name="res_model">stock.warehouse.orderpoint</field>
+        <field name="view_mode">tree,form</field>
+        <!-- Kita pakai default view Odoo, bisa override di stock_reordering_views.xml -->
+        <field name="help" type="html">
+            <p>
+                Di sini Anda dapat melihat semua Reordering Rules (Orderpoints).  
+                Sistem akan mengecek secara otomatis dan membuat draft purchase jika perlu.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu utama (pos_pertamina) sudah ada, kita lampirkan sub‐menu di bawahnya -->
+    <menuitem id="menu_pospertamina_root" name="POS Pertamina"
+              sequence="10" parent="base.menu_custom"/>
+
+    <menuitem id="menu_pospertamina_inventory" name="Inventory" parent="menu_pospertamina_root" sequence="20"/>
+
+    <!-- Sub-menu untuk Reordering Rules -->
+    <menuitem id="menu_pospertamina_reorder" name="Reordering Rules"
+              parent="menu_pospertamina_inventory"
+              action="action_pospertamina_reorder"
+              sequence="10"/>
+</odoo>

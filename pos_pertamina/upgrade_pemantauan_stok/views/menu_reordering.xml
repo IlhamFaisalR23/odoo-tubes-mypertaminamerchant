@@ -1,0 +1,11 @@
+<!-- views/menu_reordering.xml -->
+<odoo>
+    <!-- Jika ingin membuat menu melalui views, bukan data -->
+    <menuitem id="menu_pospertamina_root" name="POS Pertamina"
+              parent="base.menu_custom" sequence="10"/>
+    <menuitem id="menu_pospertamina_inventory" name="Inventory"
+              parent="menu_pospertamina_root" sequence="20"/>
+    <menuitem id="menu_pospertamina_reorder" name="Reordering Rules"
+              parent="menu_pospertamina_inventory" action="action_pospertamina_reorder"
+              sequence="10"/>
+</odoo>

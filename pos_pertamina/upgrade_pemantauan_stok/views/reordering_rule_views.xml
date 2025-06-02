@@ -1,0 +1,57 @@
+<odoo>
+    <record id="view_reorder_rule_tree" model="ir.ui.view">
+        <field name="name">stock.reorder.forecast.rule.tree</field>
+        <field name="model">stock.reorder.forecast.rule</field>
+        <field name="arch" type="xml">
+            <tree string="Reordering Rules">
+                <field name="name"/>
+                <field name="product_id"/>
+                <field name="min_qty"/>
+                <field name="max_qty"/>
+                <field name="forecast_threshold"/>
+                <field name="auto_trigger"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_reorder_rule_form" model="ir.ui.view">
+        <field name="name">stock.reorder.forecast.rule.form</field>
+        <field name="model">stock.reorder.forecast.rule</field>
+        <field name="arch" type="xml">
+            <form string="Reordering Rule">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="product_id" options="{'no_create': True}"/>
+                        <field name="min_qty"/>
+                        <field name="max_qty"/>
+                        <field name="forecast_threshold"/>
+                        <field name="auto_trigger"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_reordering_rule" model="ir.actions.act_window">
+        <field name="name">Reordering Rules</field>
+        <field name="res_model">stock.reorder.forecast.rule</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem id="menu_reordering_rule_root" name="Reordering Rules" parent="stock.menu_stock_inventory_control"/>
+
+    <menuitem id="menu_reordering_rule" name="Rules" parent="menu_reordering_rule_root" action="action_reordering_rule"/>
+
+    <record id="action_reordering_rule" model="ir.actions.act_window">
+        <field name="name">Reordering Rules</field>
+        <field name="res_model">stock.reorder.forecast.rule</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Buat aturan pemantauan stok otomatis berdasarkan forecast dan stok minimum.
+            </p>
+        </field>
+    </record>
+</odoo>
