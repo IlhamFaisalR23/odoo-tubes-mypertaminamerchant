@@ -16,6 +16,7 @@
         'upgrade_tambah_produk/views/product_category_restrict_view.xml',
         'upgrade_tambah_produk/security/ir.model.access.csv',
         'upgrade_tambah_produk/security/product_rules.xml',
+        'master_data/data/pos_category.xml',
     ],
     'assets': {
         'point_of_sale.assets': [

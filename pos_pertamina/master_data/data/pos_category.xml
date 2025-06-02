@@ -1,0 +1,63 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="pos_category_pertamina" model="pos.category">
+            <field name="name">Pertamina</field>
+        </record>
+
+        <record id="pos_category_pertamina_bbm" model="pos.category">
+            <field name="name">BBM</field>
+            <field name="parent_id" ref="pos_category_pertamina"/>
+        </record>
+
+        <record id="pos_category_pertamina_lpg" model="pos.category">
+            <field name="name">LPG</field>
+            <field name="parent_id" ref="pos_category_pertamina"/>
+        </record>
+
+        <record id="pos_category_pertamina_pelumas" model="pos.category">
+            <field name="name">Pelumas</field>
+            <field name="parent_id" ref="pos_category_pertamina"/>
+        </record>
+
+        <record id="pos_category_pertamina_refrigeran" model="pos.category">
+            <field name="name">Refrigeran</field>
+            <field name="parent_id" ref="pos_category_pertamina"/>
+        </record>
+
+        <record id="pos_category_non_pertamina" model="pos.category">
+            <field name="name">Non-Pertamina</field>
+        </record>
+
+        <record id="pos_category_makanan" model="pos.category">
+            <field name="name">Makanan</field>
+            <field name="parent_id" ref="pos_category_non_pertamina"/>
+        </record>
+
+        <record id="pos_category_minuman" model="pos.category">
+            <field name="name">Minuman</field>
+            <field name="parent_id" ref="pos_category_non_pertamina"/>
+        </record>
+
+        <record id="pos_category_rumah_tangga" model="pos.category">
+            <field name="name">Alat Rumah Tangga</field>
+            <field name="parent_id" ref="pos_category_non_pertamina"/>
+        </record>
+
+        <record id="pos_category_kendaraan" model="pos.category">
+            <field name="name">Perlengkapan Kendaraan</field>
+            <field name="parent_id" ref="pos_category_non_pertamina"/>
+        </record>
+
+        <record id="pos_category_pulsa" model="pos.category">
+            <field name="name">Pulsa</field>
+            <field name="parent_id" ref="pos_category_non_pertamina"/>
+        </record>
+
+        <record id="pos_category_token" model="pos.category">
+            <field name="name">Token Listrik</field>
+            <field name="parent_id" ref="pos_category_non_pertamina"/>
+        </record>
+
+    </data>
+</odoo>

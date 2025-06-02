@@ -75,19 +75,25 @@ class ProductTemplate(models.Model):
                     forbidden_fields = set(vals.keys()) - {'qty_available'}
                     if forbidden_fields:
                         raise UserError(_("Anda hanya diizinkan mengubah stok untuk produk kategori Pertamina."))
-                else:
-                    forbidden_fields = set(vals.keys()) - {'list_price', 'qty_available', 'sale_ok'}
-                    if forbidden_fields:
-                        raise UserError(_("Admin hanya diizinkan mengubah harga jual, stok dan opsi menjual untuk produk kategori Pertamina."))
+                    else:
+                        allowed_fields = {'list_price', 'qty_available', 'sale_ok', 'available_in_pos'}
 
-                    if 'list_price' in vals:
-                        new_price = vals['list_price']
-                        min_price = record.min_allowed_price
-                        max_price = record.max_allowed_price
-                        if (min_price is not None and new_price < min_price) or (max_price is not None and new_price > max_price):
-                            raise UserError(_(
-                                "Harga jual produk kategori Pertamina harus antara %s dan %s."
-                            ) % (min_price or 'tidak ditentukan', max_price or 'tidak ditentukan'))
+                        if vals.get('available_in_pos') is True:
+                            allowed_fields |= {'pos_category_id', 'to_weight', 'price', 'barcode'}
+
+                        forbidden_fields = set(vals.keys()) - allowed_fields
+
+                        if forbidden_fields:
+                            raise UserError(_("Admin hanya diizinkan mengubah harga jual, stok, opsi menjual, dan field POS tertentu untuk produk kategori Pertamina."))
+
+                        if 'list_price' in vals:
+                            new_price = vals['list_price']
+                            min_price = record.min_allowed_price
+                            max_price = record.max_allowed_price
+                            if (min_price is not None and new_price < min_price) or (max_price is not None and new_price > max_price):
+                                raise UserError(_(
+                                    "Harga jual produk kategori Pertamina harus antara %s dan %s."
+                                ) % (min_price or 'tidak ditentukan', max_price or 'tidak ditentukan'))
 
             else:
                 if 'list_price' in vals and is_pertamina is False and not is_admin:
