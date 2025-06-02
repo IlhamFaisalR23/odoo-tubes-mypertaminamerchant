@@ -17,7 +17,7 @@ odoo.define("pos_edit_order_line.ManualCalculationButton", function (require) {
     async onClick() {
       const { confirmed, payload } = await this.showPopup(
         "ManualCalculationPopup",
-        { title: this.env._t("Hitung Manual") }
+        { title: this.env._t("Input Product Manual") }
       );
 
       if (confirmed && payload) {
